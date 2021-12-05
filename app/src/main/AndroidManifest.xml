@@ -16,8 +16,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Permission">
+        <activity android:name=".startActivityForResult2.Activity_4"/>
+        <activity android:name=".startActivityForResult2.Activity_3"/>
         <activity android:name=".internet.CheckInternet" />
-        <activity android:name=".file.FilePermission"/>
+        <activity android:name=".file.FilePermission" />
         <activity android:name=".gallery.GalleryPermission" />
         <activity android:name=".camera.CameraPermission" />
         <activity android:name=".camera.CameraPermissionWithClass" />
@@ -30,9 +32,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <receiver android:name=".broadCast.SMSReceiver">
             <intent-filter>
-                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
     </application>

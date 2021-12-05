@@ -9,6 +9,7 @@ import com.arash.altafi.permission.file.FilePermission
 import com.arash.altafi.permission.gallery.GalleryPermission
 import com.arash.altafi.permission.internet.CheckInternet
 import com.arash.altafi.permission.startActivityForResult.Activity_1
+import com.arash.altafi.permission.startActivityForResult2.Activity_3
 import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnFile: MaterialButton
     private lateinit var btnInternet: MaterialButton
     private lateinit var btnForResult: MaterialButton
+    private lateinit var btnForResult2: MaterialButton
     private lateinit var btnPermissionClass: MaterialButton
     //endregion
 
@@ -56,6 +58,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this , Activity_1::class.java))
         }
 
+        btnForResult2.setOnClickListener {
+            startActivity(Intent(this , Activity_3::class.java))
+        }
+
     }
 
     private fun bindViews() {
@@ -65,6 +71,7 @@ class MainActivity : AppCompatActivity() {
         btnInternet = findViewById(R.id.btn_internet_main)
         btnPermissionClass = findViewById(R.id.btn_camera_class_main)
         btnForResult = findViewById(R.id.btn_for_result_main)
+        btnForResult2 = findViewById(R.id.btn_for_result_main2)
     }
 
 }
