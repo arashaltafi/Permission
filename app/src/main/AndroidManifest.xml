@@ -16,8 +16,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Permission">
-        <activity android:name=".startActivityForResult2.Activity_4"/>
-        <activity android:name=".startActivityForResult2.Activity_3"/>
+        <activity
+            android:name=".newPermission.NewPermission"
+            android:exported="false" />
+        <activity android:name=".startActivityForResult2.Activity_4" />
+        <activity android:name=".startActivityForResult2.Activity_3" />
         <activity android:name=".internet.CheckInternet" />
         <activity android:name=".file.FilePermission" />
         <activity android:name=".gallery.GalleryPermission" />
