@@ -25,6 +25,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_permission_dexter_main"
+        android:text="permission dexter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_camera_main"
         android:text="مجوز دوربین"

@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Permission">
         <activity
+            android:name=".dexter.DexterActivity"
+            android:exported="false" />
+        <activity
             android:name=".newPermission.NewPermission"
             android:exported="false" />
         <activity android:name=".startActivityForResult2.Activity_4" />
