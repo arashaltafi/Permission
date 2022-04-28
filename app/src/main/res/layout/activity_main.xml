@@ -1,85 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_gravity="center"
-    android:gravity="center"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="10dp"
-        android:textColor="@color/black"
-        android:text="دسترسی ها"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_permission_new_main"
-        android:text="مجوز روش جدید"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_permission_new_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مجوز روش جدید" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_permission_dexter_main"
-        android:text="permission dexter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_permission_dexter_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="permission dexter" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_camera_main"
-        android:text="مجوز دوربین"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_camera_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="مجوز دوربین" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_camera_class_main"
-        android:layout_marginTop="10dp"
-        android:text="مجوز دوربین با کلاس"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_camera_class_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="مجوز دوربین با کلاس" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_gallery_main"
-        android:text="مجوز گالری"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_gallery_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="مجوز گالری" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_file_main"
-        android:text="مجوز فایل ها"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_file_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="مجوز فایل ها" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_internet_main"
-        android:text= "بررسی اتصال اینترنت"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_internet_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="بررسی اتصال اینترنت" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_for_result_main"
-        android:layout_marginTop="10dp"
-        android:text="تست برای activity for result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_for_result_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="تست برای activity for result" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_for_result_main2"
-        android:layout_marginTop="10dp"
-        android:text="تست برای activity for result2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_for_result_main2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="تست برای activity for result2" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_pick_from_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="CaptureAndPickImageAndroid" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_seismic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Seismic" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>

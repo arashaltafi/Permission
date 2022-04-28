@@ -17,6 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Permission">
         <activity
+            android:name=".seismic.SeismicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pickFromDevice.CaptureAndPickImage"
+            android:exported="false" />
+        <activity
             android:name=".dexter.DexterActivity"
             android:exported="false" />
         <activity

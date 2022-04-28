@@ -44,4 +44,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation "com.karumi:dexter:6.2.3"
+
+    implementation "commons-io:commons-io:2.7"
+
+    implementation 'com.squareup:seismic:1.0.3'
 }
