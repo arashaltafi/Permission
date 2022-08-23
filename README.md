@@ -1,13 +1,8 @@
 # Permission
 
-مثال مجوز ها
-
-دوربین
-
-گالری
-
-فایل ها
-
-اینترنت
-
-اس ام اس
+- sample Permission
+- camera
+- gallery
+- files
+- internet
+- sms
