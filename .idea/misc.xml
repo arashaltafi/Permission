@@ -3,8 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_1.xml" value="0.1361111111111111" />
+        <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_2.xml" value="0.1361111111111111" />
+        <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_3.xml" value="0.13518518518518519" />
+        <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_4.xml" value="0.1361111111111111" />
+        <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_camer_permission.xml" value="0.1361111111111111" />
+        <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_camer_permission_with_class.xml" value="0.1361111111111111" />
         <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_capture_and_pick_image.xml" value="0.25" />
-        <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_check_internet.xml" value="0.1361111111111111" />
+        <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_dexter.xml" value="0.1361111111111111" />
+        <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_file_permission.xml" value="0.1361111111111111" />
+        <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_new_permission.xml" value="0.1361111111111111" />
         <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/activity_seismic.xml" value="0.3734375" />
         <entry key="..\:/Users/Arash/Desktop/1/Permission/app/src/main/res/layout/layout_image_adapter.xml" value="0.26944444444444443" />
         <entry key="..\:/Users/Arash/Desktop/source-android/GIT/permission/app/src/main/res/layout/activity_dexter.xml" value="0.25" />

@@ -7,7 +7,7 @@ import android.os.Bundle
 import com.arash.altafi.permission.R
 import com.google.android.material.button.MaterialButton
 
-class Activity_2 : AppCompatActivity() {
+class Activity2 : AppCompatActivity() {
 
     private lateinit var btnBack : MaterialButton
 

@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.arash.altafi.permission.R
 import com.google.android.material.button.MaterialButton
 
-class Activity_3 : AppCompatActivity() {
+class Activity3 : AppCompatActivity() {
 
     private lateinit var btnNext : MaterialButton
     private lateinit var txtName : TextView
@@ -18,12 +18,11 @@ class Activity_3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_3)
 
+        bindViews()
         init()
     }
 
     private fun init() {
-        bindViews()
-
         val resultActivity = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
             if (it.resultCode == Activity.RESULT_OK) {
                 val data = it.data
@@ -32,7 +31,7 @@ class Activity_3 : AppCompatActivity() {
         }
 
         btnNext.setOnClickListener {
-            val intent : Intent = Intent(this , Activity_4::class.java)
+            val intent = Intent(this , Activity4::class.java)
             resultActivity.launch(intent)
         }
     }

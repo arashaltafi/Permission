@@ -6,6 +6,7 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 
 object PermissionUtils {
 
@@ -13,37 +14,47 @@ object PermissionUtils {
         fun observe(permissions: Map<String, Boolean>)
     }
 
-    private lateinit var resultContract: ActivityResultLauncher<Array<String>>
-
-    fun requestPermission(
-        activity: AppCompatActivity, permissions: Array<String>,
-    ) {
-        val isNotGranted = permissions.any { !isGranted(activity, it) }
-        if (isNotGranted) {
-            request(permissions)
-        }
-    }
-
     fun register(
         activity: AppCompatActivity,
         listener: PermissionListener,
+    ) = activity.registerForActivityResult(
+        ActivityResultContracts.RequestMultiplePermissions()
+    ) { permissions ->
+        listener.observe(permissions)
+    }
+
+    fun register(
+        parent: Fragment,
+        listener: PermissionListener,
+    ) = parent.registerForActivityResult(
+        ActivityResultContracts.RequestMultiplePermissions()
+    ) { permissions ->
+        listener.observe(permissions)
+    }
+
+    fun requestPermission(
+        context: Context,
+        resultContract: ActivityResultLauncher<Array<String>>,
+        vararg permissions: String,
     ) {
-        resultContract = activity.registerForActivityResult(
-            ActivityResultContracts.RequestMultiplePermissions()
-        ) { permissions ->
-            listener.observe(permissions)
+        val isNotGranted = permissions.any { !isGranted(context, it) }
+        if (isNotGranted) {
+            request(resultContract, *permissions)
         }
     }
 
     private fun request(
-        permissionList: Array<String>,
+        resultContract: ActivityResultLauncher<Array<String>>,
+        vararg permissions: String
     ) {
-        resultContract.launch(permissionList)
+        resultContract.launch(permissions.toList().toTypedArray())
     }
 
-    fun isGranted(context: Context, permission: String): Boolean {
-        return ContextCompat.checkSelfPermission(
-            context, permission
-        ) == PackageManager.PERMISSION_GRANTED
+    fun isGranted(context: Context, vararg permissions: String): Boolean {
+        return permissions.toList().any {
+            ContextCompat.checkSelfPermission(
+                context, it
+            ) == PackageManager.PERMISSION_GRANTED
+        }
     }
 }

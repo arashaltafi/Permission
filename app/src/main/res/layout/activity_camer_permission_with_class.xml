@@ -16,11 +16,11 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_camera_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_class"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="باز کردن دوربین"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/img_class"
-        android:layout_height="wrap_content"/>
+        android:text="open camera" />
 
 </RelativeLayout>

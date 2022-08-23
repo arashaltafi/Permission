@@ -71,7 +71,7 @@
             android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
             android:id="@+id/btn_load"
-            android:text="نمایش"
+            android:text="show"
             android:layout_height="wrap_content"/>
 
         <com.google.android.material.button.MaterialButton
@@ -79,7 +79,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:id="@+id/btn_save"
-            android:text="ذخیره"
+            android:text="save"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,7 +13,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:padding="30dp"
+            android:padding="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -23,7 +22,7 @@
                 android:id="@+id/btn_permission_new_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="مجوز روش جدید" />
+                android:text="permission with permission utils" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_permission_dexter_main"
@@ -37,49 +36,49 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="مجوز دوربین" />
+                android:text="permission camera 1" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_camera_class_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="مجوز دوربین با کلاس" />
+                android:text="permission camera 2" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_gallery_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="مجوز گالری" />
+                android:text="permission gallery" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_file_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="مجوز فایل ها" />
+                android:text="permission files" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_internet_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="بررسی اتصال اینترنت" />
+                android:text="check internet" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_for_result_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="تست برای activity for result" />
+                android:text="activity for result" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_for_result_main2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="تست برای activity for result2" />
+                android:text="registerForActivityResult" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_pick_from_device"

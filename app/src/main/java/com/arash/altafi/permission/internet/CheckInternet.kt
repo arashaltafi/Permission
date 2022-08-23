@@ -11,13 +11,10 @@ class CheckInternet : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_check_internet)
 
-        if (InternetConnection.isInternetAvailable(this))
-        {
-            Toast.makeText(this , "اینترنت متصل است", Toast.LENGTH_SHORT).show()
-        }
-        else
-        {
-            Toast.makeText(this , "اینترنت متصل نیست", Toast.LENGTH_SHORT).show()
+        if (InternetConnection.isInternetAvailable(this)) {
+            Toast.makeText(this, "connect", Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(this, "not connect!!!", Toast.LENGTH_SHORT).show()
         }
     }
 }

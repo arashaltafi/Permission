@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.arash.altafi.permission.R
 import com.google.android.material.button.MaterialButton
 
-class Activity_1 : AppCompatActivity() {
+class Activity1 : AppCompatActivity() {
 
     private lateinit var btnNext : MaterialButton
     private lateinit var txtName : TextView
@@ -24,7 +24,7 @@ class Activity_1 : AppCompatActivity() {
     private fun init() {
         bindViews()
         btnNext.setOnClickListener {
-            startActivityForResult(Intent(this, Activity_2::class.java) , REQUEST_CODE)
+            startActivityForResult(Intent(this, Activity2::class.java) , REQUEST_CODE)
         }
     }
 

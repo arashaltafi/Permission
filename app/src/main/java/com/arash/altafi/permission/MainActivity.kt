@@ -12,8 +12,8 @@ import com.arash.altafi.permission.internet.CheckInternet
 import com.arash.altafi.permission.newPermission.NewPermission
 import com.arash.altafi.permission.pickFromDevice.CaptureAndPickImage
 import com.arash.altafi.permission.seismic.SeismicActivity
-import com.arash.altafi.permission.startActivityForResult.Activity_1
-import com.arash.altafi.permission.startActivityForResult2.Activity_3
+import com.arash.altafi.permission.startActivityForResult.Activity1
+import com.arash.altafi.permission.startActivityForResult2.Activity3
 import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
@@ -71,11 +71,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnForResult.setOnClickListener {
-            startActivity(Intent(this , Activity_1::class.java))
+            startActivity(Intent(this , Activity1::class.java))
         }
 
         btnForResult2.setOnClickListener {
-            startActivity(Intent(this , Activity_3::class.java))
+            startActivity(Intent(this , Activity3::class.java))
         }
 
         btnPickFromDevice.setOnClickListener {
