@@ -17,9 +17,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Permission">
         <activity
-            android:name=".seismic.SeismicActivity"
-            android:exported="false" />
-        <activity
             android:name=".pickFromDevice.CaptureAndPickImage"
             android:exported="false" />
         <activity
@@ -29,7 +26,7 @@
             android:name=".newPermission.NewPermission"
             android:exported="false" />
         <activity android:name=".startActivityForResult2.Activity4" />
-        <activity android:name=".startActivityForResult2.Activity_3" />
+        <activity android:name=".startActivityForResult2.Activity3" />
         <activity android:name=".internet.CheckInternet" />
         <activity android:name=".file.FilePermission" />
         <activity android:name=".gallery.GalleryPermission" />
@@ -37,7 +34,8 @@
         <activity android:name=".camera.CameraPermissionWithClass" />
         <activity android:name=".startActivityForResult.Activity2" />
         <activity android:name=".startActivityForResult.Activity1" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,7 +43,8 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".broadCast.SMSReceiver">
+        <receiver android:name=".broadCast.SMSReceiver"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>

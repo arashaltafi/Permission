@@ -11,7 +11,6 @@ import com.arash.altafi.permission.gallery.GalleryPermission
 import com.arash.altafi.permission.internet.CheckInternet
 import com.arash.altafi.permission.newPermission.NewPermission
 import com.arash.altafi.permission.pickFromDevice.CaptureAndPickImage
-import com.arash.altafi.permission.seismic.SeismicActivity
 import com.arash.altafi.permission.startActivityForResult.Activity1
 import com.arash.altafi.permission.startActivityForResult2.Activity3
 import com.google.android.material.button.MaterialButton
@@ -28,7 +27,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnForResult: MaterialButton
     private lateinit var btnForResult2: MaterialButton
     private lateinit var btnPickFromDevice: MaterialButton
-    private lateinit var btnSeismic: MaterialButton
     private lateinit var btnPermissionClass: MaterialButton
     //endregion
 
@@ -81,11 +79,6 @@ class MainActivity : AppCompatActivity() {
         btnPickFromDevice.setOnClickListener {
             startActivity(Intent(this , CaptureAndPickImage::class.java))
         }
-
-        btnSeismic.setOnClickListener {
-            startActivity(Intent(this , SeismicActivity::class.java))
-        }
-
     }
 
     private fun bindViews() {
@@ -99,7 +92,6 @@ class MainActivity : AppCompatActivity() {
         btnForResult = findViewById(R.id.btn_for_result_main)
         btnForResult2 = findViewById(R.id.btn_for_result_main2)
         btnPickFromDevice = findViewById(R.id.btn_pick_from_device)
-        btnSeismic = findViewById(R.id.btn_seismic)
     }
 
 }
