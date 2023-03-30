@@ -25,6 +25,13 @@
                 android:text="permission with permission utils" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_file_permission_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="permission file with permission utils" />
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_permission_dexter_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

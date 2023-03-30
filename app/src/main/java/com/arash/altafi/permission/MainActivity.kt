@@ -7,6 +7,7 @@ import com.arash.altafi.permission.camera.CameraPermission
 import com.arash.altafi.permission.camera.CameraPermissionWithClass
 import com.arash.altafi.permission.dexter.DexterActivity
 import com.arash.altafi.permission.file.FilePermission
+import com.arash.altafi.permission.filePermission.FilePermissionActivity
 import com.arash.altafi.permission.gallery.GalleryPermission
 import com.arash.altafi.permission.internet.CheckInternet
 import com.arash.altafi.permission.newPermission.NewPermission
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     //region variables
     private lateinit var btnNewPermission: MaterialButton
+    private lateinit var btnFilePermission: MaterialButton
     private lateinit var btnPermissionDexter: MaterialButton
     private lateinit var btnCamera: MaterialButton
     private lateinit var btnGallery: MaterialButton
@@ -42,6 +44,10 @@ class MainActivity : AppCompatActivity() {
 
         btnNewPermission.setOnClickListener {
             startActivity(Intent(this , NewPermission::class.java))
+        }
+
+        btnFilePermission.setOnClickListener {
+            startActivity(Intent(this , FilePermissionActivity::class.java))
         }
 
         btnPermissionDexter.setOnClickListener {
@@ -83,6 +89,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun bindViews() {
         btnNewPermission = findViewById(R.id.btn_permission_new_main)
+        btnFilePermission = findViewById(R.id.btn_file_permission_new)
         btnPermissionDexter = findViewById(R.id.btn_permission_dexter_main)
         btnCamera = findViewById(R.id.btn_camera_main)
         btnGallery = findViewById(R.id.btn_gallery_main)
